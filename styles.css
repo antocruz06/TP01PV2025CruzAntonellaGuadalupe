@@ -7,8 +7,6 @@ body{
 
 }
 
-
-
 header {
     background-color: #ff6f6f;
     padding: 10px 20px;
@@ -35,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d8130d;
+    color: #d9534f;
 }
 
 nav ul li {
@@ -68,6 +66,16 @@ section{
     justify-content:space-around;
     background-color: #ffd2d2;
     margin-top: 10px;
+}
+
+section:hover{
+    background-color: #ffa8a8;
+}
+
+section ul li{
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
 }
 
 h2, h3 {
@@ -109,14 +117,13 @@ aside ul {
 }
 
 aside ul li {
-    background-color: #ffb3b3;
     padding: 10px;
     margin: 5px 0;
     border-radius: 4px;
 }
 
-aside ul li:hover {
-    background-color: #ff9999;
+aside:hover {
+    background-color: #ffa8a8;
 }
 
 article {
@@ -131,6 +138,10 @@ article {
     justify-content:space-around;
     background-color: #ffd2d2;
     margin-top: 10px;
+}
+
+article:hover{
+    background-color: #ffa8a8;
 }
 
 article h2 {
@@ -149,7 +160,9 @@ article ul {
 }
 
 article ul li {
+    padding: 10px;
     margin: 5px 0;
+    border-radius: 4px;
 }
 
 p {
