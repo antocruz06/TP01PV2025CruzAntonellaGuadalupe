@@ -63,7 +63,6 @@ section{
     flex: 3;
     margin: 10px;
     padding: 15px;
-    border: 1px solid #8FCFE0;
     border-radius: 5px;
     width: 50%;
     box-shadow: #8FCFE0;
@@ -117,7 +116,6 @@ aside {
     justify-content:space-around;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #101D42;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 50%;
@@ -152,7 +150,6 @@ article {
     flex: 3;
     margin: 10px;
     padding: 15px;
-    border: 1px solid #8FCFE0;
     border-radius: 5px;
     width: 50%;
     box-shadow: #8FCFE0;
