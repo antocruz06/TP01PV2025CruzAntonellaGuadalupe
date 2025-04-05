@@ -4,49 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-        <header>
-            <h1>Contacto</h1>
-            <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#Historia">Historia</a></li>
-                <li><a href="index.html#Informacion">Información útil</a></li>
-                <li><a href="index.html#Ciudades">Ciudades turísticas</a></li>
-                <li><a href="index.html#Festivales">Festivales</a></li>
-                <li><a href="index.html#Gastronomia">Gastronomía</a></li>
-                <li><a href="museos.html">Museos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <section>
-                <div id="Formulario">
+            <header>
+                <h1>Contacto</h1>
+                <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+            </header>
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#Historia">Historia</a></li>
+                    <li><a href="index.html#Informacion">Información útil</a></li>
+                    <li><a href="index.html#Ciudades">Ciudades turísticas</a></li>
+                    <li><a href="index.html#Festivales">Festivales</a></li>
+                    <li><a href="index.html#Gastronomia">Gastronomía</a></li>
+                    <li><a href="museos.html">Museos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <main>
+                <section>
                     <h2>Formulario de Contacto</h2>
-                    <form action="#" method="post">
+                    <form id="contact-form">
                         <strong><label for="nombre">Nombre Completo:</label><br></strong>
                         <input type="text" id="nombre" name="nombre" required><br><br>
-
+                    
                         <strong><label for="email">Email:</label><br></strong>
                         <input type="email" id="email" name="email" required><br><br>
-
+                    
                         <strong><label for="mensaje">Mensaje (Opcional):</label><br></strong>
-                        <p>Envíenos un mensaje opcional sobre sus intereses, cosas que deberíamos mejorar o información que deberiamos añadir.</p>
+                        <p>Envíenos un mensaje opcional sobre sus intereses, cosas que deberíamos mejorar o información que deberíamos añadir.</p>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-
+                    
                         <input type="submit" value="Enviar">
                     </form>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2023 Córdoba, Argentina. Todos los derechos reservados.</p>
-        </footer>
+                </section>              
+            </main>
+    
+            <footer>
+                <p>&copy; 2023 Córdoba, Argentina. Todos los derechos reservados.</p>
+            </footer>
+            <script>
+                // Asocia la función al evento submit del formulario
+                document.getElementById("contact-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Evita el envío del formulario por defecto
+            
+                    // Obtener los valores de los campos del formulario
+                    var nombre = document.getElementById("nombre").value;
+                    var email = document.getElementById("email").value;
+                    var mensaje = document.getElementById("mensaje").value;
+            
+                    // Mostrar los valores en un alert y en la consola
+                    alert("Nombre: " + nombre + "\nEmail: " + email + "\nMensaje: " + mensaje);
+                    console.log("Nombre:", nombre);
+                    console.log("Email:", email);
+                    console.log("Mensaje:", mensaje);
+                });
+            </script>
+        
     </body>
