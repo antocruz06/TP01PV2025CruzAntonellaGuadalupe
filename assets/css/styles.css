@@ -230,12 +230,45 @@ input:focus, textarea:focus {
     border-color: #006D77;
     outline: none;
 }
+ 
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
 
-img {
-    max-width: 100%;
-    height: auto;
+.cordoba, .alfajores, .fernet, .carlospaz, .jesusmaria{
+    background-color: #AFDCE9;
+    flex-wrap: wrap;
+    flex: 3;
+    justify-content:space-around;
+    padding: 15px;
     border-radius: 8px;
-    margin: 10px 0;
-    margin: auto;
-    display: block;    
+    margin-top: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.mhistorico, .mbellasartes, .mdelche, .mmemoria{
+    background-color: #AFDCE9;
+    flex-wrap: wrap;
+    flex: 3;
+    justify-content:space-around;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
